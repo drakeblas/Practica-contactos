@@ -1,0 +1,20 @@
+
+=============================================================================================
+ARCHIVO DE CONEXION
+
+Dentro de la carpteta practica-contactos se encuentran todos los archivos, uno de ellos es el de
+conexión a la base de datos "conexion.php" ahí se define el usuario de la base de datos y su contraseña
+además de mencionar el nombre que se le asigne. En mi caso:
+user:"root"
+pass:""
+nombre de base de datos:"contactos"
+
+=============================================================================================
+INSTRUCCIONES SQL QUE UTILICE PARA CREAR LA BASE DE DATOS
+
+create database contactos;
+use contactos;
+create table contactos (idContacto int primary key auto_increment, nombre varchar(25) not null, apPaterno varchar(25) not null, apMaterno varchar(25), telefono varchar(10) not null unique, correo varchar(35) not null unique, directorio varchar(45) not null default "img/", img varchar(60) not null);
+
+=============================================================================================
+ESPERO QUE LES GUSTE, MUCHAS GRACIAS!
